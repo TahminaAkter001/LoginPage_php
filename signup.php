@@ -23,11 +23,12 @@ session_start();
 			header("Location: login.php");
 			die;
 		}
-	}
-    else
+		else
 		{
 			echo "Please enter some valid information!";
 		}
+	}
+    
 ?>
 
 
@@ -73,8 +74,8 @@ session_start();
 		<form method="post">
 			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
 
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
+			<input id="text" type="text" name="user_name" placeholder="Username"><br><br>
+			<input id="text" type="password" name="password" placeholder="Password"><br><br>
 
 			<input id="button" type="submit" value="Signup"><br><br>
 
